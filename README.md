@@ -10,7 +10,7 @@
 
 <table border="0">
  <tr>
-    <td><img src="https://github.com/dani-lbnl/SC20_pyHPC/blob/master/img/sc20_logo.png" width="400">
+    <td><img src="https://github.com/dani-lbnl/SC20_pyHPC/blob/master/img/sc20_logo.png" width="300">
     </td>
     <td>
      <p>
