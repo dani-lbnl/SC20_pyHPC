@@ -1,0 +1,13 @@
+itkwidgets>=0.32.0
+itk>=5.1.1
+scikit-image
+dask
+dask-image
+dask-labextension
+distributed
+toolz
+zarr
+xarray
+ipympl
+plotly
+ipywidgets>=7.5.1
