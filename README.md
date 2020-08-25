@@ -18,8 +18,8 @@
       - Explore Samples <a href="https://github.com/dani-lbnl/SC20_pyHPC/tree/master/code">[code]</a> <p>
       - 3D Specimens: <p>
         <li> <a href="https://zenodo.org/record/3890837#.Xue18WpKiA1">[Concrete]</a> 
-        <li> [Cells]<a href=""></a>
-        <li> [Ceramics]<a href=""></a>
+        <li> <a href="">[Ceramics]</a>
+        <li> <a href="">[Beads]</a>
       </td>
  </tr>
 </table>
