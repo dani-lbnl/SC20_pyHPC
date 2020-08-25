@@ -19,7 +19,7 @@ After setting the environmental variable, in a new JupyterLab "Terminal" run:
 
 ```sh
 pip install --user itkwidgets
-jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib jupyterlab-datawidgets itkwidgets
+jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib jupyterlab-datawidgets itkwidgets@0.32.0 dask-labextension
 ```
 
 Go to *jupyter.nersc.gov*: Shutdown the NERSC JupyterLab Server
