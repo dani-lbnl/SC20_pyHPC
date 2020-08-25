@@ -1,0 +1,13 @@
+{
+    "argv": [
+        "shifter",
+        "--image=thewtex/sc20-pyhpc-nersc-dask:latest",
+        "/usr/bin/python3",
+        "-m",
+        "ipykernel_launcher",
+        "-f",
+        "{connection_file}"
+    ],
+    "display_name": "sc20-pyhpc-nersc-dask",
+    "language": "python"
+}
