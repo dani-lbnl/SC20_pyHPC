@@ -1,7 +1,7 @@
 # SC20_pyHPC
 
 -	[SC'2020](https://sc20.supercomputing.org/attend/schedule/)
-- [pyHPC workshop](https://sc20.supercomputing.org/presentation/?id=wksp150&sess=sess111)
+- [pyHPC workshop](https://pyhpc.io/)
 - OUR DEADLINE: Sep 10TH
 - distributed computing
 - dask, numba
