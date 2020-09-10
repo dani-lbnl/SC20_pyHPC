@@ -55,7 +55,9 @@ RUN \
 COPY requirements.txt .
 RUN \
     pip3 install            \
-        -r requirements.txt
+        -r requirements.txt \
+        mpi4py              \
+        dask-mpi
 RUN \
     jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib jupyterlab-datawidgets itkwidgets
 

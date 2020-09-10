@@ -1,0 +1,30 @@
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - dask
+  - numba
+  - pip
+  - nodejs
+  - graphviz
+  - itkwidgets>=0.32.0
+  - numpy
+  - itk>=5.1.1
+  - scikit-image
+  - dask[complete]
+  - dask-image
+  - dask-labextension
+  - ipykernel
+  - graphviz
+  - distributed
+  - pandas
+  - jupyterlab
+  - scipy
+  - requests
+  - toolz
+  - zarr
+  - xarray
+  - ipympl
+  - plotly
+  - ipywidgets>=7.5.1
+  - coiled
