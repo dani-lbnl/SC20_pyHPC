@@ -7,6 +7,9 @@ JupyterHub](https://docs.nersc.gov/services/jupyter/) with:
 - itkwidgets for parallel visualization
 - The Super Computing pyHPC Python packages for 3D image analysis
 
+## Create conda env
+
+*instructions to be here, including use of requirements*
 
 ## Setting up itkwidgets in JupyterLab on NERSC
 
@@ -19,7 +22,7 @@ After setting the environmental variable, in a new JupyterLab "Terminal" run:
 
 ```sh
 pip install --user itkwidgets
-jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib jupyterlab-datawidgets itkwidgets
+jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib jupyterlab-datawidgets itkwidgets@0.32.0 dask-labextension
 ```
 
 Go to *jupyter.nersc.gov*: Shutdown the NERSC JupyterLab Server

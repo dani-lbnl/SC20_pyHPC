@@ -1,8 +1,8 @@
 # SC20_pyHPC
 
 -	[SC'2020](https://sc20.supercomputing.org/attend/schedule/)
-- [pyHPC workshop](https://sc20.supercomputing.org/presentation/?id=wksp150&sess=sess111)
-- OUR DEADLINE: Sep 20TH
+- [pyHPC workshop](https://pyhpc.io/)
+- OUR DEADLINE: Sep 10TH
 - distributed computing
 - dask, numba
 - applications and best practices for using such libraries.
@@ -18,19 +18,20 @@
       - Explore Samples <a href="https://github.com/dani-lbnl/SC20_pyHPC/tree/master/code">[code]</a> <p>
       - 3D Specimens: <p>
         <li> <a href="https://zenodo.org/record/3890837#.Xue18WpKiA1">[Concrete]</a> 
-        <li> [Cells]<a href=""></a>
-        <li> [Ceramics]<a href=""></a>
+        <li> <a href="">[Ceramics]</a>
+        <li> <a href="">[Beads]</a>
       </td>
  </tr>
 </table>
 
 ## More info:
-Key Dates
-Event	Date
-Submissions Open	Monday 1 June
-Paper Submissions Due	Friday 4 September
-Paper Author Notifications	Monday 28 September
-Lightning Talk Submissions Due	Thursday 1 October
+- Key Dates
+- Event	Date
+ - Submissions Open	Monday 1 June
+ - Paper Submissions Due	Friday 11 September
+ - Paper Author Notifications	Monday 28 September
+ - Lightning Talk Submissions Due	Thursday 1 October
+
 Paper Camera Ready	Thursday 8 October
 Lightning Talk Author Notifications	Monday 19 October
 Paper Presentation Slides	Monday 2 November
