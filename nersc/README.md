@@ -7,6 +7,9 @@ JupyterHub](https://docs.nersc.gov/services/jupyter/) with:
 - itkwidgets for parallel visualization
 - The Super Computing pyHPC Python packages for 3D image analysis
 
+## Create conda env
+
+*instructions to be here, including use of requirements*
 
 ## Setting up itkwidgets in JupyterLab on NERSC
 
