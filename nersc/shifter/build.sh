@@ -6,7 +6,7 @@ script_dir="`cd $(dirname $0); pwd`"
 
 TAG=$(date '+%Y%m%d')-$(git rev-parse --short HEAD)
 
-cp requirements.txt $script_dir
+cp ${script_dir}/environment.yml $script_dir
 
 docker build "$@" -t thewtex/sc20-pyhpc-nersc-dask:latest \
         --build-arg IMAGE=thewtex/sc20-pyhpc-nersc-dask \

@@ -5,7 +5,6 @@ scikit-image
 dask[complete]
 dask-image
 dask-labextension
-dask-mpi
 ipykernel
 graphviz
 distributed
@@ -14,6 +13,7 @@ jupyterlab
 scipy
 requests
 toolz
+numcodecs==0.6.4
 zarr
 xarray
 ipympl

@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+nersc/shifter/requirements.txt
+nersc/shifter/environment.yml
+
+code/dask-worker-space

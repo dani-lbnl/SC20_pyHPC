@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM jupyter/scipy-notebook:6d42503c684f
 
 LABEL maintainer="Matt McCormick <matt.mccormick@kitware.com>"
 
@@ -7,8 +7,8 @@ LABEL maintainer="Matt McCormick <matt.mccormick@kitware.com>"
 # "Rollin Thomas <rcthomas@lbl.gov>"
 
 ENV DEBIAN_FRONTEND=noninteractive
-WORKDIR /srv
 
+USER root
 RUN \
     apt-get update      &&  \
     apt-get install         \
@@ -22,7 +22,6 @@ RUN \
         graphviz            \
         libtool             \
         libyaml-tiny-perl   \
-        python3-pip         \
         wget                \
         build-essential
 
@@ -37,33 +36,34 @@ RUN \
     make clean                      &&  \
     cd ..                           &&  \
     rm mpich-3.3.2.tar.gz
+USER jovyan
 
-RUN \
-    curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh && \
-    bash nodesource_setup.sh && \
-    rm nodesource_setup.sh   && \
-    apt-get install --yes nodejs && \
-    nodejs -v
+COPY environment.yml .
+RUN conda env update -n base \
+    environment.yml && \
+    rm environment.yml
+RUN conda install -y -c conda-forge \
+        nodejs              \
+        jupyterhub          \
+        jupyterlab          \
+        pip                 && \
+        conda clean -y --all
 
-RUN \
-    pip3 install            \
-        --no-cache-dir      \
-        --user              \
-        --upgrade           \
-        setuptools
-
-COPY requirements.txt .
+# These currently failed on startup if installed via conda.
 RUN \
     pip3 install            \
-        -r requirements.txt \
         mpi4py              \
         dask-mpi
 RUN \
-    jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib jupyterlab-datawidgets itkwidgets
+    jupyter labextension install \
+      @jupyter-widgets/jupyterlab-manager \
+      jupyter-matplotlib \
+      jupyterlab-datawidgets \
+      itkwidgets@0.32.0
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
-ARG IMAGE=thewtex/fibercam-nersc-dask
+ARG IMAGE=thewtex/sc20-pyhpc-nersc-dask
 ARG VERSION=latest
 ARG VCS_REF
 ARG VCS_URL
