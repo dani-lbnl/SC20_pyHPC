@@ -3,33 +3,17 @@
 Scripts to automatically set up a user's account on the [NERSC
 JupyterHub](https://docs.nersc.gov/services/jupyter/) with:
 
-- Dask for parallel computation
-- itkwidgets for parallel visualization
-- The Super Computing pyHPC Python packages for 3D image analysis
+- A Dask cluster running on NERSC Cori for parallel computation
+- itkwidgets for 3D Jupyter-native visualization
+- Python packages for 3D material image analysis
 
-## Create conda env
+This setup ensures a consistent software environment for:
 
-*instructions to be here, including use of requirements*
-
-## Setting up itkwidgets in JupyterLab on NERSC
-
-Add to *.bashrc.ext* <- note .ext
-
-```sh
-export JUPYTERLAB_DIR=$HOME/.local/share/jupyter/lab
-```
-After setting the environmental variable, in a new JupyterLab "Terminal" run:
-
-```sh
-pip install --user itkwidgets
-jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib jupyterlab-datawidgets itkwidgets@0.32.0 dask-labextension
-```
-
-Go to *jupyter.nersc.gov*: Shutdown the NERSC JupyterLab Server
-
-Start up the NERSC JupyterLab Server
-
-**Enjoy ITK!**
+- The JupyterLab server and client
+- The Jupyter kernel Python process
+- The Dask dashboard
+- The Dask scheduler
+- The Dask workers
 
 ## Setting up Dask for distributed computing with the pyhpc environment on NERSC
 
@@ -37,36 +21,41 @@ Start up the NERSC JupyterLab Server
 
 This step only needs to performed once.
 
-In order for Jupyter to find our Python compute environment, we have to
-install the **kernel** configuration. The Jupyter *kernel* is the server-side
-compute environment where Jupyter executes code.
+In order for JupyterHub to run our version of JupyterLab with our JupyterLab
+extensions,  we will override the JupyterLab launched by JupyterHub.
+This will also to provide our Python compute environment for the Jupyter
+Python kernel. The Jupyter *kernel* is the server-side compute environment where
+Jupyter executes code.
 
 In a terminal on Cori, either via JupyterLab or SSH, run:
 
 ```sh
 cd SC20_pyHPC/nersc
-bash ./install-kernel-spec.sh
+bash ./install-override-jupyter.sh
 ```
 
-This will install the *kernel.json* file into
-*$HOME/.local/share/jupyter/kernels/sc20-pyhpc-nersc-dask*.
-As a result, **when you start a notebook on Cori**, you will then be able
-to select the
+This will override the JupyterLab version launched when you start a server at
+[NERSC JupyterHub](https://docs.nersc.gov/services/jupyter/).
+
+Go to *jupyter.nersc.gov*; shutdown any running NERSC JupyterLab servers, and
+start up the a NERSC JupyterLab server.
+
+As a result, when you start Jupyter on Cori this way the default Python 3
+kernel is also providing the
 
   **sc20-pyhpc-nersc-dask**
 
-kernel environment.
-
+software environment environment, i.e. scientific Python packages.
 This Python computing environment is running in a
 [Docker / Shifter image](https://docs.nersc.gov/development/shifter/overview/)
 with Python, MPI, Dask, dask-image, itk, etc. installed and configured for NERSC.
 
-The same, consistent, computing environment is used to run:
+To revert to the default NERSC Cori JupyterLab:
 
-- The Jupyter kernel Python process
-- The Dask dashboard
-- The Dask scheduler
-- The Dask workers
+```sh
+rm ~/.override-jupyter
+```
+
 
 ### Step 1: Start up the Dask cluster
 
@@ -91,18 +80,7 @@ This will start a Dask scheduler for the cluster and workers. The
 configuration for cluster is located in the *scheduler.json* file where
 `start-dask-mpi` was executed. For the above, this is at *$SCRATCH/scheduler.json*.
 
-### Step 2: Start up a notebook, use the sc20-pyhpc-dask-nersc kernel
-
-Create or open a Jupyter notebook.
-
-When creating a notebook, if an option is presented to select a kernel, choose
-the *sc20-pyhpc-nersc-dask* kernel installed in *Step 0*.
-
-If a notebook is already running, click the circle icon in the upper right
-corner. This will present a dropdown where the *sc20-pyhpc-nersc-dask* can be
-selected. Then, restart the kernel.
-
-### Step 3: Connect to the Dask cluster
+### Step 2: Connect to the Dask cluster
 
 Finally, tell your  notebook to connect to the Dask cluster scheduler.
 

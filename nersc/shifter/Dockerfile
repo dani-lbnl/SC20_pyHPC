@@ -59,6 +59,8 @@ RUN \
       @jupyter-widgets/jupyterlab-manager \
       jupyter-matplotlib \
       jupyterlab-datawidgets \
+      jupyterlab-datawidgets \
+       @jupyterlab/hub-extension \
       itkwidgets@0.32.0
 
 # Build-time metadata as defined at http://label-schema.org

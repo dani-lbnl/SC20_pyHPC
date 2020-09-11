@@ -1,0 +1,1 @@
+shifter --volume=$(pwd):/run --volume=$(pwd):/home/jovyan --image=jupyter/scipy-notebook:latest -- jupyter-labhub "$@"

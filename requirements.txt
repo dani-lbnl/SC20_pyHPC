@@ -20,3 +20,4 @@ ipympl
 plotly
 ipywidgets>=7.5.1
 coiled
+cftime
