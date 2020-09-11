@@ -73,6 +73,12 @@ start-dask-mpi --ntasks=100 --image=thewtex/sc20-pyhpc-nersc-dask:latest
 The *--image=* argument specifies the same computing environment, i.e. Python
 version Python packages, etc. as the Jupyter kernel.
 
+A *--time* flag can be passed to specify a different timeout, in minutes, for
+the cluster. The default is *30*.
+
+A *--qos* flag can be passed to specify a different quality of service level.
+The default is *interactive*.
+
 Wait for the job to start (you may need to re-run the command if the interactive queue is really busy).
 There will be a lot of output from the cluster when it starts up.
 
