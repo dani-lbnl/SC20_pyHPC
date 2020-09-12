@@ -61,6 +61,8 @@ RUN \
       jupyterlab-datawidgets \
       jupyterlab-datawidgets \
        @jupyterlab/hub-extension \
+      jupyterlab-plotly@4.10.0 \
+      plotlywidget@4.10.0 \
       itkwidgets@0.32.0
 
 # Build-time metadata as defined at http://label-schema.org
