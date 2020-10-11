@@ -62,12 +62,12 @@ rm ~/.override-jupyter
 On Cori, we can start up a Dask the cluster with the `start-dask-mpi` script
 developed by Rollin Thomas at NERSC. This script has to be executed within the
 *$SCRATCH* directory. It can be made available by loading the *nersc-dask*
-module.
+module. In an [SSH shell on Cori](https://docs.nersc.gov/connect/ssh/):
 
 ```sh
 cd $SCRATCH
 module load nersc-dask
-start-dask-mpi --ntasks=100 --image=thewtex/sc20-pyhpc-nersc-dask:latest
+start-dask-mpi --ntasks=100 --image=thewtex/sc20-pyhpc-nersc-dask:20200910-172b342
 ```
 
 The *--image=* argument specifies the same computing environment, i.e. Python
