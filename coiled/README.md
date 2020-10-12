@@ -12,7 +12,7 @@ pip install coiled
 ```
 
 ```sh
-pip install coiled
+conda install -c conda-forge coiled
 ```
 
 Then, login:
@@ -31,6 +31,7 @@ the environment:
 ```sh
 coiled install thewtex/sc20-pyhpc
 conda activate coiled-thewtex-sc20-pyhpc
+jupyter lab
 ```
 
 ## Optional: Building the Coiled software environment
