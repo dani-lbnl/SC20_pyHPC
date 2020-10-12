@@ -2,10 +2,9 @@
 
 -	[SC'2020](https://sc20.supercomputing.org/attend/schedule/)
 - [pyHPC workshop](https://pyhpc.io/)
-- OUR DEADLINE: Sep 10TH
-- distributed computing
-- dask, numba
-- applications and best practices for using such libraries.
+- distributed computing on HPC and the cloud
+- dask, jupyter, itk, scikit-image, xarray, zarr, itkwidgets
+- applications and best practices for using such libraries
 
 
 <table border="0">
@@ -24,18 +23,6 @@
  </tr>
 </table>
 
-## More info:
-- Key Dates
-- Event	Date
- - Submissions Open	Monday 1 June
- - Paper Submissions Due	Friday 11 September
- - Paper Author Notifications	Monday 28 September
- - Lightning Talk Submissions Due	Thursday 1 October
-
-Paper Camera Ready	Thursday 8 October
-Lightning Talk Author Notifications	Monday 19 October
-Paper Presentation Slides	Monday 2 November
-Workshop Date	Sunday 15 November
 Organizing Committee
 William Scullin, Laboratory for Laser Energetics, University of Rochester
 Neelofer Banglawala, EPCC, University of Edinburgh (EPCC)
