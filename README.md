@@ -2,7 +2,7 @@
 
 -	[SC'2020](https://sc20.supercomputing.org/attend/schedule/)
 - [pyHPC workshop](https://pyhpc.io/)
-- distributed computing on HPC and the cloud
+- distributed computing on HPC systems and the cloud
 - dask, jupyter, itk, scikit-image, xarray, zarr, itkwidgets
 - applications and best practices for using such libraries
 
