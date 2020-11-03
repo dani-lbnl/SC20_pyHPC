@@ -5,7 +5,9 @@ scaling Python with [Dask](https://dask.org) clusters.
 
 ## Install and setup
 
-To work with a Coiled cluster, first install the *coiled* Python package:
+Create an account with [Coiled](coiled.io)
+
+To work with a Coiled cluster, first install the *coiled* Python package locally:
 
 ```sh
 pip install coiled
