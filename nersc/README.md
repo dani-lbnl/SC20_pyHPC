@@ -77,7 +77,7 @@ A *--time* flag can be passed to specify a different timeout, in minutes, for
 the cluster. The default is *30*.
 
 A *--qos* flag can be passed to specify a different quality of service level.
-The default is *interactive*.
+The default is *interactive*. Another common qos value is *premium*.
 
 Wait for the job to start (you may need to re-run the command if the interactive queue is really busy).
 There will be a lot of output from the cluster when it starts up.
