@@ -5,7 +5,9 @@ scaling Python with [Dask](https://dask.org) clusters.
 
 ## Install and setup
 
-First, create an account with [Coiled](coiled.io).
+First, create an account with [Coiled](coiled.io). While Coiled.io runs on the
+AWS cloud by default, you do not *need* an AWS account and you do not *need* to
+configure anything in the AWS console.
 
 To work with a Coiled cluster, first install the *coiled* Python package in your local machine:
 
