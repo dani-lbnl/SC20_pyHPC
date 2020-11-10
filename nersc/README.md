@@ -67,14 +67,18 @@ module. In an [SSH shell on Cori](https://docs.nersc.gov/connect/ssh/):
 ```sh
 cd $SCRATCH
 module load nersc-dask
-start-dask-mpi --ntasks=100 --image=thewtex/sc20-pyhpc-nersc-dask:20200910-172b342
+start-dask-mpi --ntasks=32 --cpus-per-task=4 --image=thewtex/sc20-pyhpc-nersc-dask:latest
 ```
 
 The *--image=* argument specifies the same computing environment, i.e. Python
 version Python packages, etc. as the Jupyter kernel.
 
+The *--ntasks* relates to the number of Dask workers created.
+
+The *--cpus-per-task* defines the number of CPUs per task. The default is *2*.
+
 A *--time* flag can be passed to specify a different timeout, in minutes, for
-the cluster. The default is *30*.
+the Dask cluster. The default is *30*.
 
 A *--qos* flag can be passed to specify a different quality of service level.
 The default is *interactive*. Another common qos value is *premium*.
