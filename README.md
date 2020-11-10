@@ -1,11 +1,11 @@
-# SC20_pyHPC
+SC20_pyHPC
+==========
 
 -	[SC'2020](https://sc20.supercomputing.org/attend/schedule/)
-- [pyHPC workshop](https://pyhpc.io/)
-- distributed computing on HPC systems and the cloud
-- dask, jupyter, itk, scikit-image, xarray, zarr, itkwidgets
-- applications and best practices for using such libraries
-
+-	[pyHPC workshop](https://pyhpc.io/)
+-	distributed computing on HPC systems and the cloud
+-	dask, jupyter, itk, scikit-image, xarray, zarr, itkwidgets
+-	applications and best practices for using such libraries
 
 <table border="0">
  <tr>
@@ -13,7 +13,7 @@
     </td>
     <td>
      <p>
-      - Ushizima, McCormick, Parkinson <i> Accelerating Microstructural Analytics with Dask for Volumetric X-ray Images </i> <a href="https://github.com/dani-lbnl/SC20_pyHPC/blob/master/SC20preprint.pdf">[preprint]</a> <p>
+      - Ushizima, McCormick, Parkinson <i> Accelerating Microstructural Analytics with Dask for Volumetric X-ray Images </i> <a href="https://github.com/dani-lbnl/SC20_pyHPC/blob/master/SC20_pyHPC_dask4volumes.pdf">[preprint]</a> <p>
       - Explore Code Samples <a href="https://github.com/dani-lbnl/SC20_pyHPC/tree/master/code">[code]</a> <p>
       - 3D Data Specimens: <p>
         <li> <a href="https://zenodo.org/record/3890837#.Xue18WpKiA1">[Concrete]</a>
@@ -27,9 +27,10 @@
  </tr>
 </table>
 
-## Organizing Committee
+Organizing Committee
+--------------------
 
-- William Scullin, Laboratory for Laser Energetics, University of Rochester
-- Neelofer Banglawala, EPCC, University of Edinburgh (EPCC)
-- Rosa M. Badia, Barcelona Supercomputing Centre
-- James Clark, Hartree Centre - UK Research and Innovation
+-	William Scullin, Laboratory for Laser Energetics, University of Rochester
+-	Neelofer Banglawala, EPCC, University of Edinburgh (EPCC)
+-	Rosa M. Badia, Barcelona Supercomputing Centre
+-	James Clark, Hartree Centre - UK Research and Innovation
