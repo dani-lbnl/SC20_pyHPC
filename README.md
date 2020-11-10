@@ -13,18 +13,24 @@
     </td>
     <td>
      <p>
-      - Ushizima, McCormick, <i> Microstructural Characterization of 3D specimens </i> <a href="https://github.com/dani-lbnl/SC20_pyHPC/blob/master/SC20preprint.pdf">[preprint]</a> <p>
-      - Explore Samples <a href="https://github.com/dani-lbnl/SC20_pyHPC/tree/master/code">[code]</a> <p>
-      - 3D Specimens: <p>
-        <li> <a href="https://zenodo.org/record/3890837#.Xue18WpKiA1">[Concrete]</a> 
-        <li> <a href="">[Ceramics]</a>
-        <li> <a href="">[Beads]</a>
+      - Ushizima, McCormick, Parkinson <i> Accelerating Microstructural Analytics with Dask for Volumetric X-ray Images </i> <a href="https://github.com/dani-lbnl/SC20_pyHPC/blob/master/SC20preprint.pdf">[preprint]</a> <p>
+      - Explore Code Samples <a href="https://github.com/dani-lbnl/SC20_pyHPC/tree/master/code">[code]</a> <p>
+      - 3D Data Specimens: <p>
+        <li> <a href="https://zenodo.org/record/3890837#.Xue18WpKiA1">[Concrete]</a>
+        <li> <a href="http://dx.doi.org/doi:10.18126/M2QM0Z">[Fibers]</a>
+        <li> <a href="https://github.com/dani-lbnl/SC20_pyHPC/tree/master/data">[Beads]</a> <p>
+      - Python Cluster Configuration: <p>
+        <li> <a
+        href="https://github.com/dani-lbnl/SC20_pyHPC/tree/master/nersc">NERSC
+        Dask MPI</a>
+        <li> <a href="https://github.com/dani-lbnl/SC20_pyHPC/tree/master/coiled">Coiled.io Cloud Cluster</a>
       </td>
  </tr>
 </table>
 
-Organizing Committee
-William Scullin, Laboratory for Laser Energetics, University of Rochester
-Neelofer Banglawala, EPCC, University of Edinburgh (EPCC)
-Rosa M. Badia, Barcelona Supercomputing Centre
-James Clark, Hartree Centre - UK Research and Innovation
+## Organizing Committee
+
+- William Scullin, Laboratory for Laser Energetics, University of Rochester
+- Neelofer Banglawala, EPCC, University of Edinburgh (EPCC)
+- Rosa M. Badia, Barcelona Supercomputing Centre
+- James Clark, Hartree Centre - UK Research and Innovation
