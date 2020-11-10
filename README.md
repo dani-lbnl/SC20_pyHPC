@@ -21,9 +21,8 @@
         <li> <a href="https://github.com/dani-lbnl/SC20_pyHPC/tree/master/data">[Beads]</a> <p>
       - Python Cluster Configuration: <p>
         <li> <a
-        href="https://github.com/dani-lbnl/SC20_pyHPC/tree/master/nersc">NERSC
-        Dask MPI</a>
-        <li> <a href="https://github.com/dani-lbnl/SC20_pyHPC/tree/master/coiled">Coiled.io Cloud Cluster</a>
+        href="https://github.com/dani-lbnl/SC20_pyHPC/tree/master/nersc">[NERSC MPI]</a>
+        <li> <a href="https://github.com/dani-lbnl/SC20_pyHPC/tree/master/coiled">[Coiled.io Cloud]</a>
       </td>
  </tr>
 </table>
