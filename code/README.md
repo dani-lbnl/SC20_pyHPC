@@ -5,7 +5,7 @@ Codes by Dani Ushizima and Matt McCormick
 
 <table border="0">
  <tr>
-    <td><img src="https://github.com/dani-lbnl/SC20_pyHPC/edit/master/imgs/fiber.png" width="400">
+    <td><img src="https://github.com/dani-lbnl/SC20_pyHPC/edit/master/img/fibers_3d_vesselness.png" width="400">
     </td>
     <td>
       <p> <b>SETUP</b>:
