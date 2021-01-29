@@ -26,6 +26,20 @@ SC20_pyHPC
       </td>
  </tr>
 </table>
+ 
+ Please reference us:
+ <div class="row">
+      <pre class="col-md-offset-2 col-md-8">
+      @InProceedings{SC:2020,
+author = {Daniela Ushizima and Matthew McCormick and Dilworth Parkinson},
+title = {Accelerating Microstructural Analytics with Dask for Volumetric X-ray Images},
+booktitle = {2020 IEEE/ACM 9th Workshop on Python for High-Performance and Scientific Computing (PyHPC) at Super Computing},
+month = {Nov},
+year = {2020},
+pages = {41-48},
+}      </pre>
+    </div>
+ 
 
 Organizing Committee
 --------------------
