@@ -15,6 +15,7 @@ SC20_pyHPC
      <p>
       - Ushizima, McCormick, Parkinson <i> Accelerating Microstructural Analytics with Dask for Volumetric X-ray Images </i> <a href="https://github.com/dani-lbnl/SC20_pyHPC/blob/master/SC20_pyHPC_dask4volumes.pdf">[preprint]</a> <p>
       - Explore Code Samples <a href="https://github.com/dani-lbnl/SC20_pyHPC/tree/master/code">[code]</a> <p>
+      - Attention: conda install -c conda-forge jupyterlab=2.0 <p>
       - 3D Data Specimens: <p>
         <li> <a href="https://zenodo.org/record/3890837#.Xue18WpKiA1">[Concrete]</a>
         <li> <a href="http://dx.doi.org/doi:10.18126/M2QM0Z">[Fibers]</a>
